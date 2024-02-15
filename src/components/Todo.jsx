@@ -16,9 +16,12 @@ const Todo = () => {
                 <input type="text" value={todo} onChange={(e) => setTodo(e.target.value)}/>
                 <button type="submit">Add</button>
             </form>
-            {console.log(todos)}
+
+            {todos.map((item) => (
+                <h3>{item}</h3>
+            ))}
         </div>
-    );
+    ); 
 }
  
 export default Todo;
