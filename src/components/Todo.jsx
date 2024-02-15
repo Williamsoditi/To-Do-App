@@ -13,9 +13,9 @@ const Todo = () => {
 
     return (  
         <div>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="form-control text-center">
                 <input type="text" value={todo} onChange={(e) => setTodo(e.target.value)}/>
-                <button type="submit">Add</button>
+                <button type="submit" className="btn btn-sm btn-primary">Add</button>
             </form>
 
             {todos.map((item) => (
