@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ToDoItem from "./ToDoItem";
 const Todo = () => {
 
     const [todo, setTodo] = useState("");
@@ -18,7 +19,7 @@ const Todo = () => {
             </form>
 
             {todos.map((item) => (
-                <h3>{item}</h3>
+                <ToDoItem key={item} item={item}/>
             ))}
         </div>
     ); 
