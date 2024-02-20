@@ -5,7 +5,7 @@ const TodoList = ({ todos, settodos }) => {
     return (
         <div className="container mt-4 p-4 list">
             {todos.map((item) => (
-                <ToDoItem key={item} item={item} todos={todos} settodos={settodos}/>
+                <ToDoItem key={item.name} item={item} todos={todos} settodos={settodos}/>
             ))}
         </div>
     );
