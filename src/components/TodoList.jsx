@@ -1,8 +1,9 @@
 import ToDoItem from "./ToDoItem";
+import "./toDoList.css"
 
 const TodoList = ({ todos }) => {
     return (
-        <div>
+        <div className="container mt-4 p-4 list">
             {todos.map((item) => (
                 <ToDoItem key={item} item={item} />
             ))}

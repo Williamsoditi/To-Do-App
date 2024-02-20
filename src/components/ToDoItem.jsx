@@ -1,7 +1,10 @@
+import "./toDoItem.css"
+
 const ToDoItem = ({ item }) => {
     return ( 
-        <div>
-            <div>{item}</div>
+        <div className="item">
+            <div className="itemName">{item}</div>
+            <hr />
         </div>
      );
 }
