@@ -1,9 +1,9 @@
-import styles from "./header.module.css";
+import "./header.css";
 
 const Header = () => {
     return ( 
-        <div className={styles.header}>
-            <h3 className="display-2">To-Do List</h3>
+        <div className="bg-warning text-center p-4 header">
+            <h3 className="welcome">To-Do List</h3>
         </div>
      );
 }
