@@ -1,11 +1,11 @@
 import ToDoItem from "./ToDoItem";
 import "./toDoList.css"
 
-const TodoList = ({ todos }) => {
+const TodoList = ({ todos, settodos }) => {
     return (
         <div className="container mt-4 p-4 list">
             {todos.map((item) => (
-                <ToDoItem key={item} item={item} />
+                <ToDoItem key={item} item={item} todos={todos} settodos={settodos}/>
             ))}
         </div>
     );

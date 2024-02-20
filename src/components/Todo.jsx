@@ -8,7 +8,7 @@ const Todo = () => {
     return (  
         <div>
             <Form todos={todos} settodos={settodos}/>
-            <TodoList todos={todos} />
+            <TodoList todos={todos} settodos={settodos}/>
         </div>
     ); 
 }
