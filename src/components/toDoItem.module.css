@@ -5,10 +5,13 @@
 }
 
 .itemName{
-    font-weight: bold;
-    
+    font-weight: bolder;
 }
 
 .deleteBtn{
     cursor: pointer;
+}
+
+.completed{
+    text-decoration: line-through ;
 }
