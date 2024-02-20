@@ -15,7 +15,7 @@ A simple yet elegant to do application to manage small tasks.
 ## Project Resources
 The following is a live link to the project's site
 
-Link : [Click Here]()
+Link : [Click Here](https://taskforce25.netlify.app/)
 
 ## Installation
 **Requirements**
