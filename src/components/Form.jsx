@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from "./form.module.css";
 
 const Form = ({todos, settodos}) => {
     const [todo, setTodo] = useState("");
@@ -12,9 +13,11 @@ const Form = ({todos, settodos}) => {
 
     return ( 
         <div>
-            <form onSubmit={handleSubmit} className="form-control text-center">
-                <input type="text" value={todo} onChange={(e) => setTodo(e.target.value)} />
-                <button type="submit" className="btn btn-sm btn-primary">Add</button>
+            <form onSubmit={handleSubmit} className={styles.toDoForm}>
+                <div className={styles.inputContainer}>
+                    <input type="text" value={todo} onChange={(e) => setTodo(e.target.value)} className={styles.modernInput} placeholder="Enter task here..." />
+                    <button type="submit" className={styles.modernButton}>Add</button>
+                </div>
             </form>
         </div>
      );
